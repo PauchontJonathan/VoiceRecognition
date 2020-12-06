@@ -7,7 +7,6 @@ const app  = {
   init: () => {
 
     const verifySupport = 'speechSynthesis' in window;
-    console.log(verifySupport);
 
     voiceContainer = document.querySelector('.box');
     recordElement = document.querySelector('.voiceContainer-record');
