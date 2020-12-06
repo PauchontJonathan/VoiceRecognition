@@ -18,6 +18,7 @@ const app  = {
   },
 
   launchRecognition: () => {
+    if (app.isRecording) return ;
     const recognition = new webkitSpeechRecognition() ||new SpeechRecognition() ;
 
     recognition.start();
